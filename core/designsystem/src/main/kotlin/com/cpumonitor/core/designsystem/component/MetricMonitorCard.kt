@@ -62,7 +62,7 @@ fun MetricMonitorCard(
                 null
             },
         )
-        Spacer(modifier = Modifier.height(if (compact) MonitorDimens.spacingSm else MonitorDimens.spacingMd))
+        Spacer(modifier = Modifier.height(MonitorDimens.spacingSm))
         MonitorMetricValue(
             value = metric.value,
             unit = metric.unit,

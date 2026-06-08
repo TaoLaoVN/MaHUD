@@ -51,9 +51,9 @@ fun MonitorWindowSize.adaptiveGridMinSize(): Dp = when (this) {
  * Horizontal content padding tuned per window size.
  */
 fun MonitorWindowSize.horizontalContentPadding(): Dp = when (this) {
-    MonitorWindowSize.Compact -> 16.dp
-    MonitorWindowSize.Medium -> 24.dp
-    MonitorWindowSize.Expanded -> 32.dp
+    MonitorWindowSize.Compact -> 12.dp
+    MonitorWindowSize.Medium -> 20.dp
+    MonitorWindowSize.Expanded -> 24.dp
 }
 
 /**

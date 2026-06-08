@@ -147,7 +147,7 @@ internal fun DashboardContent(
             top = MonitorDimens.spacingSm + contentPadding.calculateTopPadding(),
             bottom = MonitorDimens.spacingMd + contentPadding.calculateBottomPadding(),
         ),
-        verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingMd),
+        verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
     ) {
         item {
             DashboardSectionHeader(title = stringResource(R.string.section_overview))
@@ -197,7 +197,7 @@ internal fun DashboardContent(
         item {
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(MonitorDimens.spacingMd),
+                horizontalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
             ) {
                 listOf(WIDGET_THERMAL, WIDGET_BATTERY).forEach { widgetId ->
                     widgetMap[widgetId]?.let { widget ->
@@ -263,7 +263,7 @@ private fun OverviewGrid(widgetMap: Map<String, MonitorWidgetUiState>) {
 private fun DashboardSectionHeader(title: String) {
     Text(
         text = title,
-        modifier = Modifier.padding(top = MonitorDimens.spacingSm),
+        modifier = Modifier.padding(top = MonitorDimens.spacingXs),
         style = MaterialTheme.typography.titleSmall,
         fontWeight = FontWeight.SemiBold,
         color = MaterialTheme.colorScheme.onSurfaceVariant,

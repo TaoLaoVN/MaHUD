@@ -133,7 +133,7 @@ private fun SettingsContent(
             top = MonitorDimens.spacingSm + contentPadding.calculateTopPadding(),
             bottom = MonitorDimens.spacingMd + contentPadding.calculateBottomPadding(),
         ),
-        verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
+        verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingXs),
     ) {
         uiState.errorMessage?.let { message ->
             item {
@@ -192,7 +192,6 @@ private fun AppUpdateCard(
 ) {
     MonitorCard {
         Column(
-            modifier = Modifier.padding(MonitorDimens.spacingMd),
             verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
         ) {
             MonitorCardHeader(
@@ -316,7 +315,6 @@ private fun BackgroundMonitoringCard(
 ) {
     MonitorCard {
         Column(
-            modifier = Modifier.padding(MonitorDimens.spacingMd),
             verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
         ) {
             MonitorCardHeader(
@@ -369,7 +367,6 @@ private fun ThemeCard(
 ) {
     MonitorCard {
         Column(
-            modifier = Modifier.padding(MonitorDimens.spacingMd),
             verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
         ) {
             MonitorCardHeader(
@@ -401,7 +398,6 @@ private fun RetentionCard(
 
     MonitorCard {
         Column(
-            modifier = Modifier.padding(MonitorDimens.spacingMd),
             verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
         ) {
             MonitorCardHeader(
@@ -490,7 +486,6 @@ private fun CompactRetentionRow(
 private fun PerformanceCard(performance: PerformanceUiState) {
     MonitorCard {
         Column(
-            modifier = Modifier.padding(MonitorDimens.spacingMd),
             verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
         ) {
             MonitorCardHeader(

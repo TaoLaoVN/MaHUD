@@ -58,7 +58,7 @@ fun ExportScreen(
                 top = MonitorDimens.spacingLg + padding.calculateTopPadding(),
                 bottom = MonitorDimens.spacingLg + padding.calculateBottomPadding(),
             ),
-            verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingMd),
+            verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
         ) {
             item {
                 MonitorCard {

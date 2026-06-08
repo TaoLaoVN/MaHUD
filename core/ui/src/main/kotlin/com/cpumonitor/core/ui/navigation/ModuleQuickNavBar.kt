@@ -65,8 +65,8 @@ fun ModuleQuickNavBar(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(
-                    horizontal = MonitorDimens.spacingMd,
-                    vertical = MonitorDimens.spacingSm,
+                    horizontal = MonitorDimens.spacingSm,
+                    vertical = MonitorDimens.spacingXs,
                 ),
         ) {
             items(items, key = { it.route }) { item ->

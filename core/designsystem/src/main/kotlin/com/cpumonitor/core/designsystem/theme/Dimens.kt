@@ -7,15 +7,15 @@ import androidx.compose.ui.unit.dp
  */
 object MonitorDimens {
     val spacingXs = 4.dp
-    val spacingSm = 8.dp
-    val spacingMd = 12.dp
-    val spacingLg = 16.dp
-    val spacingXl = 24.dp
+    val spacingSm = 6.dp
+    val spacingMd = 8.dp
+    val spacingLg = 12.dp
+    val spacingXl = 16.dp
 
-    val cardPadding = 16.dp
-    val cardPaddingCompact = 12.dp
+    val cardPadding = 12.dp
+    val cardPaddingCompact = 8.dp
     val cardElevation = 1.dp
-    val chartHeight = 96.dp
-    val chartHeightLarge = 140.dp
+    val chartHeight = 80.dp
+    val chartHeightLarge = 108.dp
     val metricValueMinWidth = 72.dp
 }

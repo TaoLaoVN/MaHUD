@@ -85,7 +85,7 @@ private fun CpuContent(
             top = MonitorDimens.spacingLg + contentPadding.calculateTopPadding(),
             bottom = MonitorDimens.spacingLg + contentPadding.calculateBottomPadding(),
         ),
-        verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingMd),
+        verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
     ) {
         item {
             MetricMonitorCard(

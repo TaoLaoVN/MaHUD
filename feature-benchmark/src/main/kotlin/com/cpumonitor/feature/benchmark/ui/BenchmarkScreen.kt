@@ -51,7 +51,7 @@ fun BenchmarkScreen(
                 .fillMaxSize()
                 .padding(padding),
             contentPadding = PaddingValues(MonitorDimens.spacingLg),
-            verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingMd),
+            verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
         ) {
             item {
                 Text(
@@ -127,7 +127,6 @@ private fun ProgressCard(
 ) {
     MonitorCard(modifier = Modifier.fillMaxWidth()) {
         Column(
-            modifier = Modifier.padding(MonitorDimens.spacingMd),
             verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
         ) {
             MonitorCardHeader(
@@ -171,8 +170,7 @@ private fun BenchmarkModeCard(
 ) {
     MonitorCard(modifier = Modifier.fillMaxWidth()) {
         Column(
-            modifier = Modifier.padding(MonitorDimens.spacingMd),
-            verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingMd),
+            verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
         ) {
             MonitorCardHeader(
                 title = stringResource(R.string.benchmark_cpu_title),
@@ -203,7 +201,6 @@ private fun BenchmarkModeCard(
 private fun BenchmarkResultCard(result: BenchmarkResult) {
     MonitorCard(modifier = Modifier.fillMaxWidth()) {
         Column(
-            modifier = Modifier.padding(MonitorDimens.spacingMd),
             verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingXs),
         ) {
             MonitorCardHeader(
@@ -238,8 +235,7 @@ private fun StressTestCard(
 ) {
     MonitorCard(modifier = Modifier.fillMaxWidth()) {
         Column(
-            modifier = Modifier.padding(MonitorDimens.spacingMd),
-            verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingMd),
+            verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
         ) {
             MonitorCardHeader(
                 title = stringResource(R.string.benchmark_stress_title),
@@ -270,7 +266,6 @@ private fun StressTestCard(
 private fun StressTestResultCard(result: StressTestResult) {
     MonitorCard(modifier = Modifier.fillMaxWidth()) {
         Column(
-            modifier = Modifier.padding(MonitorDimens.spacingMd),
             verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingXs),
         ) {
             MonitorCardHeader(

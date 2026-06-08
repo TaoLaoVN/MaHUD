@@ -98,7 +98,7 @@ private fun AnalyticsContent(
             .fillMaxSize()
             .padding(contentPadding),
         contentPadding = PaddingValues(MonitorDimens.spacingLg),
-        verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingMd),
+        verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
     ) {
         item {
             Text(
@@ -141,7 +141,6 @@ private fun AnalyticsContent(
 private fun DeviceHealthCard(health: DeviceHealthReport) {
     MonitorCard(modifier = Modifier.fillMaxWidth()) {
         Column(
-            modifier = Modifier.padding(MonitorDimens.spacingMd),
             verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
         ) {
             MonitorCardHeader(
@@ -178,7 +177,6 @@ private fun ComponentHealthLine(component: ComponentHealthScore) {
 private fun PerformanceScoreCard(performance: PerformanceScore) {
     MonitorCard(modifier = Modifier.fillMaxWidth()) {
         Column(
-            modifier = Modifier.padding(MonitorDimens.spacingMd),
             verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingXs),
         ) {
             MonitorCardHeader(
@@ -209,7 +207,6 @@ private fun ScoreLine(label: String, score: Int) {
 private fun AdvancedAnalyticsCard(analytics: AdvancedAnalyticsSnapshot) {
     MonitorCard(modifier = Modifier.fillMaxWidth()) {
         Column(
-            modifier = Modifier.padding(MonitorDimens.spacingMd),
             verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
         ) {
             MonitorCardHeader(
@@ -241,7 +238,6 @@ private fun PeakLine(label: String, value: String) {
 private fun InsightCard(insight: AnalyticsInsight) {
     MonitorCard(modifier = Modifier.fillMaxWidth()) {
         Column(
-            modifier = Modifier.padding(MonitorDimens.spacingMd),
             verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingXs),
         ) {
             MonitorCardHeader(

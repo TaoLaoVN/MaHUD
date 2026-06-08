@@ -105,7 +105,7 @@ private fun DeviceInfoContent(
             top = MonitorDimens.spacingSm + contentPadding.calculateTopPadding(),
             bottom = MonitorDimens.spacingLg + contentPadding.calculateBottomPadding(),
         ),
-        verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingMd),
+        verticalArrangement = Arrangement.spacedBy(MonitorDimens.spacingSm),
     ) {
         item {
             AuthenticityCard(
@@ -281,7 +281,7 @@ private fun AuthenticityCard(
     }
 
     MonitorCard {
-        Column(modifier = Modifier.padding(MonitorDimens.spacingMd)) {
+        Column {
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceBetween,
