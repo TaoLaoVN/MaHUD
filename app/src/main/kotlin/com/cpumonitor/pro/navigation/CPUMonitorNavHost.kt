@@ -69,7 +69,7 @@ fun CPUMonitorNavHost() {
     ) { padding ->
         NavHost(
             navController = navController,
-            startDestination = ModuleRoutes.DASHBOARD,
+            startDestination = ModuleRoutes.OVERLAY,
             modifier = Modifier.padding(padding),
         ) {
             dashboardScreen(

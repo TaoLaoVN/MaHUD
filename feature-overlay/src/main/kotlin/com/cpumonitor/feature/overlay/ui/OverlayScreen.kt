@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Switch
@@ -21,10 +22,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import com.cpumonitor.core.ui.R
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.cpumonitor.core.ui.R
 import com.cpumonitor.domain.model.OverlayMetrics
 import com.cpumonitor.feature.overlay.permission.OverlayPermissionEffect
 import com.cpumonitor.feature.overlay.permission.openOverlayPermissionSettings
@@ -56,6 +57,13 @@ fun OverlayScreen(
             }
 
             else -> {
+                OverlayHeroCard(
+                    uiState = uiState,
+                    onStartOverlay = viewModel::startOverlay,
+                    onStopOverlay = viewModel::stopOverlay,
+                    onRequestPermission = { openOverlayPermissionSettings(context) },
+                )
+
                 PermissionCard(
                     isGranted = uiState.isPermissionGranted,
                     onRequestPermission = { openOverlayPermissionSettings(context) },
@@ -70,33 +78,82 @@ fun OverlayScreen(
                     MetricsPreviewCard(metrics = metrics)
                 }
 
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(12.dp),
-                ) {
-                    Button(
-                        onClick = viewModel::startOverlay,
-                        enabled = uiState.isPermissionGranted && !uiState.isOverlayRunning,
-                        modifier = Modifier.weight(1f),
-                    ) {
-                        Text(stringResource(R.string.overlay_start))
-                    }
-
-                    OutlinedButton(
-                        onClick = viewModel::stopOverlay,
-                        enabled = uiState.isOverlayRunning,
-                        modifier = Modifier.weight(1f),
-                    ) {
-                        Text(stringResource(R.string.overlay_stop))
-                    }
-                }
-
                 uiState.errorMessage?.let { message ->
                     Text(
                         text = message,
                         color = MaterialTheme.colorScheme.error,
                         style = MaterialTheme.typography.bodyMedium,
                     )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun OverlayHeroCard(
+    uiState: OverlayUiState,
+    onStartOverlay: () -> Unit,
+    onStopOverlay: () -> Unit,
+    onRequestPermission: () -> Unit,
+) {
+    val status = when {
+        uiState.isOverlayRunning -> stringResource(R.string.overlay_status_running)
+        uiState.isPermissionGranted -> stringResource(R.string.overlay_status_ready)
+        else -> stringResource(R.string.overlay_status_blocked)
+    }
+    val summary = when {
+        uiState.isOverlayRunning -> stringResource(R.string.overlay_primary_running)
+        uiState.isPermissionGranted -> stringResource(R.string.overlay_primary_ready)
+        else -> stringResource(R.string.overlay_primary_blocked)
+    }
+
+    ElevatedCard(modifier = Modifier.fillMaxWidth()) {
+        Column(
+            modifier = Modifier.padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp),
+        ) {
+            Text(
+                text = status,
+                style = MaterialTheme.typography.titleLarge,
+            )
+            Text(
+                text = summary,
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            Text(
+                text = stringResource(R.string.overlay_mvp_subtitle),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+            ) {
+                if (uiState.isOverlayRunning) {
+                    OutlinedButton(
+                        onClick = onStopOverlay,
+                        modifier = Modifier.fillMaxWidth(),
+                    ) {
+                        Text(stringResource(R.string.overlay_stop))
+                    }
+                } else {
+                    Button(
+                        onClick = if (uiState.isPermissionGranted) onStartOverlay else onRequestPermission,
+                        modifier = Modifier.fillMaxWidth(),
+                    ) {
+                        Text(
+                            stringResource(
+                                if (uiState.isPermissionGranted) {
+                                    R.string.overlay_start
+                                } else {
+                                    R.string.overlay_grant
+                                },
+                            ),
+                        )
+                    }
                 }
             }
         }

@@ -22,6 +22,7 @@ data class ModuleNavItem(
 )
 
 val DefaultModuleNavItems: List<ModuleNavItem> = listOf(
+    ModuleNavItem(ModuleRoutes.OVERLAY, R.string.nav_overlay),
     ModuleNavItem(ModuleRoutes.DASHBOARD, R.string.nav_dashboard),
     ModuleNavItem(ModuleRoutes.DEVICE_INFO, R.string.nav_device_info),
     ModuleNavItem(ModuleRoutes.STORAGE, R.string.nav_storage),
@@ -29,7 +30,6 @@ val DefaultModuleNavItems: List<ModuleNavItem> = listOf(
     ModuleNavItem(ModuleRoutes.EXPORT, R.string.nav_export),
     ModuleNavItem(ModuleRoutes.PROCESS, R.string.nav_process),
     ModuleNavItem(ModuleRoutes.ALERTS, R.string.nav_alerts),
-    ModuleNavItem(ModuleRoutes.OVERLAY, R.string.nav_overlay),
     ModuleNavItem(ModuleRoutes.BENCHMARK, R.string.nav_benchmark),
     ModuleNavItem(ModuleRoutes.ANALYTICS, R.string.nav_analytics),
 )

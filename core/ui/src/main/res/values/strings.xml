@@ -98,6 +98,13 @@
     <string name="alerts_none">No alerts fired yet</string>
 
     <string name="overlay_title">Floating Overlay</string>
+    <string name="overlay_mvp_subtitle">Keep CPU, RAM, temperature, and FPS visible while you are inside another app.</string>
+    <string name="overlay_status_running">Overlay is running</string>
+    <string name="overlay_status_ready">Ready to launch</string>
+    <string name="overlay_status_blocked">Permission needed</string>
+    <string name="overlay_primary_running">Your live monitor is visible over other apps.</string>
+    <string name="overlay_primary_ready">Start the floating monitor, then switch to the app you want to watch.</string>
+    <string name="overlay_primary_blocked">Grant overlay permission once, then come back here to start monitoring.</string>
     <string name="overlay_permission">Overlay permission</string>
     <string name="overlay_grant">Grant overlay permission</string>
     <string name="overlay_start">Start overlay</string>

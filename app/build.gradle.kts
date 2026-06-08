@@ -26,8 +26,8 @@ android {
         applicationId = "com.cpumonitor.pro"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = 2
+        versionName = "0.2.0"
 
         buildConfigField("String", "GITHUB_REPO_OWNER", "\"TaoLaoVN\"")
         buildConfigField("String", "GITHUB_REPO_NAME", "\"MaHUD\"")

@@ -98,6 +98,13 @@
     <string name="alerts_none">Chưa có cảnh báo nào</string>
 
     <string name="overlay_title">Lớp phủ nổi</string>
+    <string name="overlay_mvp_subtitle">Giữ CPU, RAM, nhiệt độ, và FPS hiển thị khi bạn đang ở trong ứng dụng khác.</string>
+    <string name="overlay_status_running">Lớp phủ đang chạy</string>
+    <string name="overlay_status_ready">Sẵn sàng bật</string>
+    <string name="overlay_status_blocked">Cần cấp quyền</string>
+    <string name="overlay_primary_running">Bảng giám sát trực tiếp đang hiển thị trên ứng dụng khác.</string>
+    <string name="overlay_primary_ready">Bật bảng giám sát nổi, rồi chuyển sang ứng dụng bạn muốn theo dõi.</string>
+    <string name="overlay_primary_blocked">Cấp quyền lớp phủ một lần, rồi quay lại đây để bật giám sát.</string>
     <string name="overlay_permission">Quyền hiển thị lớp phủ</string>
     <string name="overlay_grant">Cấp quyền lớp phủ</string>
     <string name="overlay_start">Bật lớp phủ</string>
