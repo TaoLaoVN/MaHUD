@@ -790,3 +790,16 @@ This architecture must support future expansion without requiring major rewrites
 | Settings entry → Device Info | completed | 2026-06-08 — `settingsScreen(onNavigateToDeviceInfo)` |
 | Unit tests (`DeviceAuthenticityValidatorTest`) | completed | 2026-06-08 — trusted/emulator/mismatch cases |
 | Compile verification (`assembleDebug` + `installDebug`) | completed | 2026-06-08 — BUILD SUCCESSFUL, đã cài lên Honor AAK-AN00 |
+
+### Phase 12: App Update via GitHub Releases
+
+| Bước | Status | Notes |
+|------|--------|-------|
+| Domain models (`AppRelease`, `AppUpdateStatus`) + `VersionComparator` | completed | 2026-06-08 — `domain/model/update/`, `domain/update/VersionComparator.kt` |
+| `AppUpdateRepository` + use cases (`CheckForAppUpdate`, `DownloadAppUpdate`) | completed | 2026-06-08 — `domain/repository/AppUpdateRepository.kt`, `domain/usecase/update/` |
+| `core:network` OkHttp + `GitHubReleaseDataSource` | completed | 2026-06-08 — GitHub API `/releases/latest`, parse APK asset |
+| `AppUpdateRepositoryImpl` + Hilt binding | completed | 2026-06-08 — download APK vào cache, so sánh version |
+| Settings UI — App update card (check/download/install) | completed | 2026-06-08 — `feature-settings`, `AppUpdateInstaller`, FileProvider |
+| BuildConfig `GITHUB_REPO_OWNER/NAME` + permissions | completed | 2026-06-08 — `TaoLaoVN/MaHUD`, INTERNET, REQUEST_INSTALL_PACKAGES |
+| Git init + push `main` → GitHub | completed | 2026-06-08 — https://github.com/TaoLaoVN/MaHUD |
+| Compile verification (`assembleDebug` + `domain:test`) | completed | 2026-06-08 — BUILD SUCCESSFUL |
