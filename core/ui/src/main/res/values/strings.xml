@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_title">CPU Monitor</string>
+    <string name="settings">Settings</string>
+    <string name="updated_just_now">Updated just now</string>
+    <string name="updated_seconds_ago">Updated %1$ds ago</string>
+    <string name="updated_minutes_ago">Updated %1$dm ago</string>
+
+    <string name="section_overview">Overview</string>
+    <string name="section_live_charts">Live charts</string>
+    <string name="section_modules">Modules</string>
+
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_device_info">Device</string>
+    <string name="nav_storage">Storage</string>
+    <string name="nav_history">History</string>
+    <string name="nav_export">Export</string>
+    <string name="nav_process">Processes</string>
+    <string name="nav_alerts">Alerts</string>
+    <string name="nav_overlay">Overlay</string>
+    <string name="nav_benchmark">Benchmark</string>
+    <string name="nav_analytics">Analytics</string>
+
+    <string name="widget_cpu_usage">CPU Usage</string>
+    <string name="widget_memory">Memory</string>
+    <string name="widget_cpu_temp">CPU Temperature</string>
+    <string name="widget_cpu_freq">CPU Frequency</string>
+    <string name="widget_battery">Battery</string>
+    <string name="widget_device_health">Device Health</string>
+    <string name="subtitle_realtime">Realtime</string>
+    <string name="subtitle_ram">RAM utilization</string>
+    <string name="subtitle_thermal">Thermal zone</string>
+    <string name="subtitle_clock">Current clock</string>
+    <string name="subtitle_charging">Charging</string>
+    <string name="subtitle_discharging">Discharging</string>
+    <string name="label_total">Total</string>
+    <string name="label_used">Used</string>
+    <string name="label_current">Current</string>
+    <string name="label_avg">Avg</string>
+    <string name="label_level">Level</string>
+    <string name="label_score">Score</string>
+
+    <string name="health_excellent">Excellent</string>
+    <string name="health_good">Good</string>
+    <string name="health_fair">Fair</string>
+    <string name="health_poor">Poor</string>
+    <string name="health_critical">Critical</string>
+
+    <string name="theme_title">Theme</string>
+    <string name="theme_subtitle">Light, Dark, or AMOLED</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_amoled">AMOLED</string>
+    <string name="background_refresh">Background Refresh</string>
+    <string name="data_retention">Data Retention</string>
+    <string name="data_retention_subtitle">Historical metrics storage</string>
+    <string name="performance">Performance</string>
+    <string name="performance_subtitle">CPU overhead &amp; memory footprint</string>
+    <string name="cpu_overhead">CPU overhead</string>
+    <string name="memory_used">Memory used</string>
+
+    <string name="storage_internal">Internal Storage</string>
+    <string name="storage_categories">Categories</string>
+    <string name="storage_groups">%1$d groups</string>
+    <string name="storage_used_fmt">Used: %1$s</string>
+    <string name="storage_free_fmt">Free: %1$s</string>
+    <string name="storage_total_fmt">Total: %1$s</string>
+
+    <string name="history_metric">Metric</string>
+    <string name="history_select_source">Select data source</string>
+    <string name="history_time_range">Time Range</string>
+    <string name="history_no_data">No Data</string>
+    <string name="history_no_data_subtitle">Background monitoring has not stored samples for this window yet</string>
+    <string name="history_title">%1$s History</string>
+    <string name="history_samples">%1$d samples</string>
+    <string name="label_latest">Latest</string>
+
+    <string name="export_report">Export Report</string>
+    <string name="export_subtitle">Generate diagnostic reports on demand</string>
+    <string name="export_format">Format</string>
+    <string name="export_time_range">Time Range</string>
+    <string name="exporting">Exporting…</string>
+    <string name="export_share">Share</string>
+    <string name="export_last">Last Export</string>
+
+    <string name="process_search">Search</string>
+    <string name="process_search_subtitle">Filter by name or PID</string>
+    <string name="process_search_hint">Search processes</string>
+    <string name="process_sort">Sort By</string>
+    <string name="process_none">No processes</string>
+    <string name="process_none_subtitle">Try another search term</string>
+    <string name="process_pid">PID %1$d</string>
+
+    <string name="alerts_rules">Alert Rules</string>
+    <string name="alerts_rules_subtitle">Notifications fire from background monitoring</string>
+    <string name="alerts_history">Alert History</string>
+    <string name="alerts_events">%1$d recent events</string>
+    <string name="alerts_none">No alerts fired yet</string>
+
+    <string name="overlay_title">Floating Overlay</string>
+    <string name="overlay_permission">Overlay permission</string>
+    <string name="overlay_grant">Grant overlay permission</string>
+    <string name="overlay_start">Start overlay</string>
+    <string name="overlay_stop">Stop overlay</string>
+    <string name="overlay_gaming">Gaming mode</string>
+    <string name="overlay_preview">Live preview</string>
+
+    <string name="benchmark_title">Benchmark &amp; Stress Test</string>
+    <string name="analytics_title">Advanced Analytics</string>
+    <string name="analytics_unavailable">Analytics unavailable</string>
+
+    <string name="metric_cpu">CPU</string>
+    <string name="metric_memory">Memory</string>
+    <string name="metric_thermal">Thermal</string>
+    <string name="metric_battery">Battery</string>
+
+    <string name="range_1m">1 min</string>
+    <string name="range_5m">5 min</string>
+    <string name="range_15m">15 min</string>
+    <string name="range_1h">1 hour</string>
+    <string name="range_24h">24 hours</string>
+
+    <string name="sort_cpu">CPU</string>
+    <string name="sort_memory">Memory</string>
+    <string name="sort_name">Name</string>
+
+    <string name="error_monitoring_failed">Monitoring failed</string>
+
+    <string name="label_min">Min</string>
+    <string name="label_max">Max</string>
+    <string name="label_average">Average</string>
+    <string name="label_available">Available</string>
+    <string name="label_free">Free</string>
+    <string name="label_cached">Cached</string>
+    <string name="label_voltage">Voltage</string>
+    <string name="label_electric_current">Current</string>
+    <string name="label_temperature">Temperature</string>
+    <string name="label_health">Health</string>
+    <string name="label_charge_speed">Charge Speed</string>
+
+    <string name="cpu_core_clusters">Core Clusters</string>
+    <string name="cpu_big_little">Big / Little usage</string>
+    <string name="cpu_big_cores">Big Cores</string>
+    <string name="cpu_little_cores">Little Cores</string>
+    <string name="cpu_core_index">Core %1$d</string>
+    <string name="cpu_frequency">Frequency</string>
+    <string name="cpu_frequency_subtitle">Current / Min / Max</string>
+    <string name="cpu_architecture">Architecture</string>
+    <string name="cpu_hardware_info">Hardware info</string>
+    <string name="cpu_cores">Cores</string>
+    <string name="cpu_abi">ABI</string>
+    <string name="cpu_hardware">Hardware</string>
+    <string name="cpu_arm_arch">ARM Arch</string>
+    <string name="cpu_implementer">Implementer</string>
+    <string name="cpu_part">Part</string>
+    <string name="cpu_history">History</string>
+    <string name="cpu_history_subtitle">Last 1 minute (%1$d samples)</string>
+    <string name="cpu_no_samples">No persisted samples yet</string>
+
+    <string name="memory_usage">Memory Usage</string>
+    <string name="memory_low_warning">Low memory warning</string>
+    <string name="memory_breakdown">Memory Breakdown</string>
+    <string name="memory_total_fmt">Total: %1$s</string>
+
+    <string name="battery_level">Battery Level</string>
+    <string name="battery_electrical">Electrical</string>
+    <string name="battery_voltage_current">Voltage &amp; current</string>
+    <string name="battery_status">Status</string>
+
+    <string name="thermal_overheating">Overheating detected</string>
+    <string name="thermal_throttling">Throttling</string>
+    <string name="thermal_temperatures">Temperatures</string>
+    <string name="thermal_zones">Thermal Zones</string>
+    <string name="thermal_zones_count">%1$d zones</string>
+
+    <string name="overlay_permission_granted">SYSTEM_ALERT_WINDOW granted</string>
+    <string name="overlay_permission_required">Required to display the floating monitor over other apps</string>
+    <string name="overlay_gaming_subtitle">Compact overlay, slower refresh, lower memory footprint</string>
+    <string name="overlay_metric_fps">FPS</string>
+
+    <string name="benchmark_running">Running</string>
+    <string name="benchmark_cancel">Cancel</string>
+    <string name="benchmark_cpu_title">CPU Benchmark</string>
+    <string name="benchmark_cpu_subtitle">15 second prime workload — score, temperature, frequency stability</string>
+    <string name="benchmark_run_cpu">Run CPU benchmark</string>
+    <string name="benchmark_result">Benchmark result</string>
+    <string name="benchmark_stress_title">Stress Test</string>
+    <string name="benchmark_stress_subtitle">Sustained multi-core load with thermal monitoring</string>
+    <string name="benchmark_run_stress">Run stress test</string>
+    <string name="benchmark_stress_result">Stress test result</string>
+    <string name="benchmark_temperature_fmt">Temperature: %1$d°C</string>
+    <string name="benchmark_frequency_fmt">Frequency: %1$d MHz</string>
+    <string name="benchmark_score">Score</string>
+    <string name="benchmark_peak_temperature">Peak temperature</string>
+    <string name="benchmark_avg_temperature">Average temperature</string>
+    <string name="benchmark_frequency_stability">Frequency stability</string>
+    <string name="benchmark_duration">Duration</string>
+    <string name="benchmark_avg_cpu">Average CPU usage</string>
+    <string name="benchmark_mode_single">Single Core</string>
+    <string name="benchmark_mode_multi">Multi Core</string>
+    <string name="benchmark_stress_5m">5 minutes</string>
+    <string name="benchmark_stress_10m">10 minutes</string>
+    <string name="benchmark_stress_30m">30 minutes</string>
+
+    <string name="analytics_health_engine">Device Health Engine</string>
+    <string name="analytics_performance_scoring">Performance Scoring</string>
+    <string name="analytics_overall_score">Overall %1$d</string>
+    <string name="analytics_cpu_stability">CPU stability</string>
+    <string name="analytics_thermal_headroom">Thermal headroom</string>
+    <string name="analytics_memory_efficiency">Memory efficiency</string>
+    <string name="analytics_battery_endurance">Battery endurance</string>
+    <string name="analytics_trends_peaks">Trends &amp; Peaks</string>
+    <string name="analytics_samples">%1$d samples</string>
+    <string name="analytics_peak_cpu">Peak CPU</string>
+    <string name="analytics_peak_memory">Peak memory</string>
+    <string name="analytics_peak_temperature">Peak temperature</string>
+
+    <string name="storage_cat_apps">Applications</string>
+    <string name="storage_cat_images">Images</string>
+    <string name="storage_cat_videos">Videos</string>
+    <string name="storage_cat_audio">Audio</string>
+    <string name="storage_cat_documents">Documents</string>
+    <string name="storage_cat_downloads">Downloads</string>
+    <string name="storage_cat_other">Other</string>
+
+    <string name="export_local_hint">Exports are stored locally and can be shared from this screen.</string>
+    <string name="export_size_fmt">Size: %1$d bytes</string>
+    <string name="export_share_chooser">Share report</string>
+
+    <string name="alert_comparator_gt">&gt;</string>
+    <string name="alert_comparator_lt">&lt;</string>
+
+    <string name="error_cpu_monitoring">CPU monitoring failed</string>
+    <string name="error_memory_monitoring">Memory monitoring failed</string>
+    <string name="error_battery_monitoring">Battery monitoring failed</string>
+    <string name="error_thermal_monitoring">Thermal monitoring failed</string>
+    <string name="error_storage_monitoring">Storage monitoring failed</string>
+
+    <string name="process_cpu_fmt">CPU %1$s%%</string>
+    <string name="process_ram_fmt">RAM %1$d KB</string>
+    <string name="settings_budget_cpu">Budget: ≤ %1$d%%</string>
+    <string name="settings_budget_memory">Budget: ≤ 150 MB</string>
+
+    <string name="battery_health_good">Good</string>
+    <string name="battery_health_overheat">Overheat</string>
+    <string name="battery_health_dead">Dead</string>
+    <string name="battery_health_over_voltage">Over voltage</string>
+    <string name="battery_health_failure">Failure</string>
+    <string name="battery_health_cold">Cold</string>
+    <string name="battery_health_unknown">Unknown</string>
+
+    <string name="thermal_zone_cpu">CPU</string>
+    <string name="thermal_zone_gpu">GPU</string>
+    <string name="thermal_zone_battery">Battery</string>
+    <string name="thermal_zone_skin">Device surface</string>
+    <string name="thermal_zone_charger">Charger</string>
+    <string name="thermal_zone_modem">Modem</string>
+    <string name="thermal_zone_wlan">Wi‑Fi</string>
+    <string name="thermal_zone_camera">Camera</string>
+    <string name="thermal_zone_pa">Power amplifier</string>
+    <string name="thermal_zone_soc">SoC</string>
+    <string name="thermal_zone_display">Display</string>
+    <string name="thermal_zone_ntc">NTC sensor</string>
+
+    <string name="health_summary_avg_usage">Average usage %1$d%%</string>
+    <string name="health_summary_peak_temp">Peak temperature %1$d°C</string>
+    <string name="health_summary_battery">%1$d%% • %2$s</string>
+    <string name="health_summary_no_cpu">No CPU samples yet</string>
+    <string name="health_summary_no_memory">No memory samples yet</string>
+    <string name="health_summary_no_thermal">No thermal samples yet</string>
+    <string name="health_summary_no_battery">No battery samples yet</string>
+
+    <string name="perf_summary_excellent">System performance is stable with healthy thermal headroom.</string>
+    <string name="perf_summary_good">Performance is good with minor variability.</string>
+    <string name="perf_summary_fair">Performance is acceptable but shows some stress.</string>
+    <string name="perf_summary_poor">Performance is constrained by sustained load or heat.</string>
+
+    <string name="trend_metric_cpu_usage">CPU usage</string>
+    <string name="trend_metric_memory_usage">Memory usage</string>
+    <string name="trend_metric_temperature">Temperature</string>
+
+    <string name="insight_title_rising">%1$s rising</string>
+    <string name="insight_high_cpu_load">High CPU load detected</string>
+    <string name="insight_memory_pressure">Memory pressure detected</string>
+    <string name="insight_elevated_temperature">Elevated temperature</string>
+    <string name="insight_thermal_throttling">Thermal throttling observed</string>
+    <string name="insight_system_stable">System stable</string>
+    <string name="insight_desc_rising">%1$s increased %2$d%% in the last hour.</string>
+    <string name="insight_desc_peak_cpu">Peak CPU usage reached %1$d%% in the selected window.</string>
+    <string name="insight_desc_peak_memory">Peak memory usage reached %1$d%%.</string>
+    <string name="insight_desc_peak_temperature">Peak temperature reached %1$d°C.</string>
+    <string name="insight_desc_throttling">%1$d thermal throttling events recorded.</string>
+    <string name="insight_desc_stable">No significant anomalies detected in the selected analytics window.</string>
+
+    <string name="alert_rule_cpu_high">CPU above 90%</string>
+    <string name="alert_rule_thermal_high">Temperature above 45°C</string>
+    <string name="alert_rule_memory_high">RAM above 85%</string>
+    <string name="alert_rule_battery_low">Battery below 20%</string>
+    <string name="alert_history_message">%1$s (current=%2$s)</string>
+
+    <string name="retention_24h">24 hours</string>
+    <string name="retention_7d">7 days</string>
+    <string name="retention_30d">30 days</string>
+    <string name="retention_unlimited">Unlimited</string>
+
+    <string name="settings_background_title">Background monitoring</string>
+    <string name="settings_background_subtitle">Keeps metrics running when the app is closed</string>
+    <string name="settings_battery_exempt">Unrestricted battery — monitoring protected</string>
+    <string name="settings_battery_restricted">Battery saver may stop monitoring</string>
+    <string name="settings_battery_allow">Allow unrestricted</string>
+    <string name="settings_battery_granted">Allowed</string>
+    <string name="settings_refresh_interval">Refresh every %1$d s</string>
+    <string name="settings_retention_expand">Customize per metric</string>
+    <string name="settings_retention_collapse">Hide details</string>
+    <string name="settings_retention_summary">CPU %1$s · RAM %2$s · Thermal %3$s · Battery %4$s</string>
+    <string name="settings_device_info">Device specifications</string>
+    <string name="settings_device_info_subtitle">Verify hardware identity and detect inconsistencies</string>
+
+    <string name="settings_update_title">App update</string>
+    <string name="settings_update_current_version">Current version: %1$s</string>
+    <string name="settings_update_checking">Checking GitHub releases…</string>
+    <string name="settings_update_up_to_date">You are on the latest version</string>
+    <string name="settings_update_available">Version %1$s is available</string>
+    <string name="settings_update_download">Download update</string>
+    <string name="settings_update_downloading">Downloading update…</string>
+    <string name="settings_update_ready">Download complete. Tap install to update.</string>
+    <string name="settings_update_install">Install update</string>
+    <string name="settings_update_check_again">Check again</string>
+    <string name="settings_update_error">Unable to check for updates</string>
+
+    <string name="device_info_title">Device Info</string>
+    <string name="device_info_refresh">Refresh</string>
+    <string name="device_info_authenticity_checks">Authenticity checks</string>
+    <string name="device_info_authenticity_checks_subtitle">Cross-validation of hardware and software signals</string>
+    <string name="device_info_identity">Device identity</string>
+    <string name="device_info_identity_subtitle">Build properties reported by the system</string>
+    <string name="device_info_cpu">CPU hardware</string>
+    <string name="device_info_cpu_subtitle">Architecture from cpuinfo and sysfs frequencies</string>
+    <string name="device_info_cpu_cores">Per-core frequencies</string>
+    <string name="device_info_cpu_cores_subtitle">Realtime clock speeds from sysfs (MHz)</string>
+    <string name="device_info_memory_storage">Memory &amp; storage</string>
+    <string name="device_info_memory_storage_subtitle">Reported totals from the system</string>
+    <string name="device_info_software">Software</string>
+    <string name="device_info_software_subtitle">Android build and kernel information</string>
+    <string name="device_info_screen">Display</string>
+    <string name="device_info_screen_subtitle">Resolution, density, and refresh rate</string>
+    <string name="device_info_gpu">GPU</string>
+    <string name="device_info_gpu_subtitle">Graphics stack information</string>
+    <string name="device_info_auth_trusted">Looks consistent</string>
+    <string name="device_info_auth_warning">Review recommended</string>
+    <string name="device_info_auth_suspicious">Suspicious device</string>
+    <string name="device_info_auth_score">Score %1$d</string>
+    <string name="device_info_auth_disclaimer">Heuristic checks only. A high score does not guarantee a genuine device.</string>
+    <string name="device_info_manufacturer">Manufacturer</string>
+    <string name="device_info_brand">Brand</string>
+    <string name="device_info_model">Model</string>
+    <string name="device_info_device">Device</string>
+    <string name="device_info_product">Product</string>
+    <string name="device_info_board">Board</string>
+    <string name="device_info_hardware">Hardware</string>
+    <string name="device_info_bootloader">Bootloader</string>
+    <string name="device_info_fingerprint">Fingerprint</string>
+    <string name="device_info_supported_abis">Supported ABIs</string>
+    <string name="device_info_variant">Variant</string>
+    <string name="device_info_avg_current_freq">Avg current frequency</string>
+    <string name="device_info_avg_max_freq">Avg max frequency</string>
+    <string name="device_info_cpu_usage_monitoring">CPU usage monitoring</string>
+    <string name="device_info_available">Available</string>
+    <string name="device_info_blocked_by_rom">Blocked by ROM</string>
+    <string name="device_info_total_ram">Total RAM</string>
+    <string name="device_info_total_storage">Total storage</string>
+    <string name="device_info_android_version">Android version</string>
+    <string name="device_info_api_level">API level</string>
+    <string name="device_info_security_patch">Security patch</string>
+    <string name="device_info_kernel">Kernel</string>
+    <string name="device_info_build_id">Build ID</string>
+    <string name="device_info_build_tags">Build tags</string>
+    <string name="device_info_build_type">Build type</string>
+    <string name="device_info_display_build">Display build</string>
+    <string name="device_info_resolution">Resolution</string>
+    <string name="device_info_resolution_value">%1$d x %2$d (%3$s)</string>
+    <string name="screen_class_sd">SD</string>
+    <string name="screen_class_hd">HD</string>
+    <string name="screen_class_full_hd">Full HD</string>
+    <string name="screen_class_qhd">Quad HD</string>
+    <string name="screen_class_uhd_4k">4K UHD</string>
+    <string name="screen_class_uhd_8k">8K UHD</string>
+    <string name="screen_class_unknown">Unknown</string>
+    <string name="device_info_density">Density</string>
+    <string name="device_info_refresh_rate">Refresh rate</string>
+    <string name="device_info_gpu_renderer">GPU renderer</string>
+    <string name="device_info_gpu_vendor">GPU vendor</string>
+    <string name="device_info_opengl_es">OpenGL ES</string>
+    <string name="device_info_core_label">Core %1$d</string>
+    <string name="device_info_current_freq">Current</string>
+    <string name="device_info_min_freq">Minimum</string>
+    <string name="device_info_max_freq">Maximum</string>
+    <string name="device_info_governor">Governor</string>
+
+    <string name="device_info_cameras">Cameras</string>
+    <string name="device_info_cameras_subtitle">Lens facing, resolution, and hardware capabilities</string>
+    <string name="device_info_no_cameras">No cameras reported by the system</string>
+    <string name="device_info_camera_facing_back">Rear</string>
+    <string name="device_info_camera_facing_front">Front</string>
+    <string name="device_info_camera_facing_external">External</string>
+    <string name="device_info_camera_facing_unknown">Unknown</string>
+    <string name="device_info_camera_summary">%1$s · %2$s</string>
+    <string name="device_info_camera_mp">%1$s MP</string>
+    <string name="device_info_camera_flash">Flash</string>
+    <string name="device_info_camera_ois">OIS</string>
+    <string name="device_info_camera_no_flash">No flash</string>
+
+    <string name="device_info_audio">Audio</string>
+    <string name="device_info_audio_subtitle">Microphones and speakers detected by the system</string>
+    <string name="device_info_microphone">Microphone</string>
+    <string name="device_info_speakers">Speakers</string>
+    <string name="device_info_audio_input_devices">Input devices</string>
+    <string name="device_info_audio_output_devices">Output devices</string>
+    <string name="device_info_audio_device_count">%1$d devices</string>
+
+    <string name="device_info_sensors">Sensors</string>
+    <string name="device_info_sensors_subtitle">%1$d hardware sensors</string>
+    <string name="device_info_sensor_entry">%1$s · %2$s</string>
+
+    <string name="device_info_connectivity">Connectivity &amp; hardware</string>
+    <string name="device_info_connectivity_subtitle">Wireless, biometric, and motion hardware</string>
+    <string name="device_info_bluetooth">Bluetooth</string>
+    <string name="device_info_wifi">Wi-Fi</string>
+    <string name="device_info_nfc">NFC</string>
+    <string name="device_info_gps">GPS</string>
+    <string name="device_info_telephony">Telephony</string>
+    <string name="device_info_fingerprint_sensor">Fingerprint sensor</string>
+    <string name="device_info_face_unlock">Face unlock</string>
+    <string name="device_info_usb_host">USB host</string>
+    <string name="device_info_vibrator">Vibration motor</string>
+    <string name="device_info_accelerometer">Accelerometer</string>
+    <string name="device_info_gyroscope">Gyroscope</string>
+    <string name="device_info_compass">Compass</string>
+    <string name="device_info_proximity">Proximity</string>
+    <string name="device_info_light_sensor">Light sensor</string>
+    <string name="device_info_barometer">Barometer</string>
+    <string name="device_info_step_counter">Step counter</string>
+    <string name="device_info_yes">Yes</string>
+    <string name="device_info_no">No</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="monitoring_notification_channel_name">Background monitoring</string>
+    <string name="monitoring_notification_channel_description">Collects CPU and memory metrics for history</string>
+    <string name="monitoring_notification_title">CPU Monitor active</string>
+    <string name="monitoring_notification_text">Recording system metrics in the background</string>
+</resources>

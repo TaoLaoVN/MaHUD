@@ -1,0 +1,12 @@
+# Copy this file to local.properties and fill in your values.
+# local.properties is gitignored — never commit secrets.
+
+sdk.dir=C\:\\path\\to\\Android\\Sdk
+
+# Optional: release signing (required for Play Store uploads)
+# Generate keystore:
+#   keytool -genkey -v -keystore release.keystore -alias cpumonitor -keyalg RSA -keysize 2048 -validity 10000
+RELEASE_STORE_FILE=release.keystore
+RELEASE_STORE_PASSWORD=your_store_password
+RELEASE_KEY_ALIAS=cpumonitor
+RELEASE_KEY_PASSWORD=your_key_password

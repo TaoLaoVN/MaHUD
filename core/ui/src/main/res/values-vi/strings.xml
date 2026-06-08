@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_title">Giám sát CPU</string>
+    <string name="settings">Cài đặt</string>
+    <string name="updated_just_now">Vừa cập nhật</string>
+    <string name="updated_seconds_ago">Cập nhật %1$d giây trước</string>
+    <string name="updated_minutes_ago">Cập nhật %1$d phút trước</string>
+
+    <string name="section_overview">Tổng quan</string>
+    <string name="section_live_charts">Biểu đồ trực tiếp</string>
+    <string name="section_modules">Mô-đun</string>
+
+    <string name="nav_dashboard">Tổng quan</string>
+    <string name="nav_device_info">Thiết bị</string>
+    <string name="nav_storage">Bộ nhớ</string>
+    <string name="nav_history">Lịch sử</string>
+    <string name="nav_export">Xuất dữ liệu</string>
+    <string name="nav_process">Tiến trình</string>
+    <string name="nav_alerts">Cảnh báo</string>
+    <string name="nav_overlay">Lớp phủ</string>
+    <string name="nav_benchmark">Đo hiệu năng</string>
+    <string name="nav_analytics">Phân tích</string>
+
+    <string name="widget_cpu_usage">Mức CPU</string>
+    <string name="widget_memory">Bộ nhớ RAM</string>
+    <string name="widget_cpu_temp">Nhiệt độ CPU</string>
+    <string name="widget_cpu_freq">Tần số CPU</string>
+    <string name="widget_battery">Pin</string>
+    <string name="widget_device_health">Sức khỏe thiết bị</string>
+    <string name="subtitle_realtime">Trực tiếp</string>
+    <string name="subtitle_ram">Mức sử dụng RAM</string>
+    <string name="subtitle_thermal">Vùng nhiệt</string>
+    <string name="subtitle_clock">Xung nhịp hiện tại</string>
+    <string name="subtitle_charging">Đang sạc</string>
+    <string name="subtitle_discharging">Đang xả</string>
+    <string name="label_total">Tổng</string>
+    <string name="label_used">Đã dùng</string>
+    <string name="label_current">Hiện tại</string>
+    <string name="label_avg">Trung bình</string>
+    <string name="label_level">Mức</string>
+    <string name="label_score">Điểm</string>
+
+    <string name="health_excellent">Xuất sắc</string>
+    <string name="health_good">Tốt</string>
+    <string name="health_fair">Khá</string>
+    <string name="health_poor">Kém</string>
+    <string name="health_critical">Nguy hiểm</string>
+
+    <string name="theme_title">Giao diện</string>
+    <string name="theme_subtitle">Sáng, tối hoặc AMOLED</string>
+    <string name="theme_light">Sáng</string>
+    <string name="theme_dark">Tối</string>
+    <string name="theme_amoled">AMOLED</string>
+    <string name="background_refresh">Làm mới nền</string>
+    <string name="data_retention">Lưu trữ dữ liệu</string>
+    <string name="data_retention_subtitle">Thời gian giữ metric lịch sử</string>
+    <string name="performance">Hiệu năng</string>
+    <string name="performance_subtitle">Tải CPU &amp; bộ nhớ ứng dụng</string>
+    <string name="cpu_overhead">Tải CPU</string>
+    <string name="memory_used">Bộ nhớ đã dùng</string>
+
+    <string name="storage_internal">Bộ nhớ trong</string>
+    <string name="storage_categories">Danh mục</string>
+    <string name="storage_groups">%1$d nhóm</string>
+    <string name="storage_used_fmt">Đã dùng: %1$s</string>
+    <string name="storage_free_fmt">Trống: %1$s</string>
+    <string name="storage_total_fmt">Tổng: %1$s</string>
+
+    <string name="history_metric">Chỉ số</string>
+    <string name="history_select_source">Chọn nguồn dữ liệu</string>
+    <string name="history_time_range">Khoảng thời gian</string>
+    <string name="history_no_data">Chưa có dữ liệu</string>
+    <string name="history_no_data_subtitle">Chưa có mẫu dữ liệu trong khoảng thời gian này</string>
+    <string name="history_title">Lịch sử %1$s</string>
+    <string name="history_samples">%1$d mẫu</string>
+    <string name="label_latest">Mới nhất</string>
+
+    <string name="export_report">Xuất báo cáo</string>
+    <string name="export_subtitle">Tạo báo cáo chẩn đoán theo yêu cầu</string>
+    <string name="export_format">Định dạng</string>
+    <string name="export_time_range">Khoảng thời gian</string>
+    <string name="exporting">Đang xuất…</string>
+    <string name="export_share">Chia sẻ</string>
+    <string name="export_last">Lần xuất gần nhất</string>
+
+    <string name="process_search">Tìm kiếm</string>
+    <string name="process_search_subtitle">Lọc theo tên hoặc PID</string>
+    <string name="process_search_hint">Tìm tiến trình</string>
+    <string name="process_sort">Sắp xếp</string>
+    <string name="process_none">Không có tiến trình</string>
+    <string name="process_none_subtitle">Thử từ khóa tìm kiếm khác</string>
+    <string name="process_pid">PID %1$d</string>
+
+    <string name="alerts_rules">Quy tắc cảnh báo</string>
+    <string name="alerts_rules_subtitle">Thông báo từ giám sát nền</string>
+    <string name="alerts_history">Lịch sử cảnh báo</string>
+    <string name="alerts_events">%1$d sự kiện gần đây</string>
+    <string name="alerts_none">Chưa có cảnh báo nào</string>
+
+    <string name="overlay_title">Lớp phủ nổi</string>
+    <string name="overlay_permission">Quyền hiển thị lớp phủ</string>
+    <string name="overlay_grant">Cấp quyền lớp phủ</string>
+    <string name="overlay_start">Bật lớp phủ</string>
+    <string name="overlay_stop">Tắt lớp phủ</string>
+    <string name="overlay_gaming">Chế độ game</string>
+    <string name="overlay_preview">Xem trước trực tiếp</string>
+
+    <string name="benchmark_title">Đo hiệu năng &amp; stress test</string>
+    <string name="analytics_title">Phân tích nâng cao</string>
+    <string name="analytics_unavailable">Không có dữ liệu phân tích</string>
+
+    <string name="metric_cpu">CPU</string>
+    <string name="metric_memory">RAM</string>
+    <string name="metric_thermal">Nhiệt</string>
+    <string name="metric_battery">Pin</string>
+
+    <string name="range_1m">1 phút</string>
+    <string name="range_5m">5 phút</string>
+    <string name="range_15m">15 phút</string>
+    <string name="range_1h">1 giờ</string>
+    <string name="range_24h">24 giờ</string>
+
+    <string name="sort_cpu">CPU</string>
+    <string name="sort_memory">RAM</string>
+    <string name="sort_name">Tên</string>
+
+    <string name="error_monitoring_failed">Giám sát thất bại</string>
+
+    <string name="label_min">Tối thiểu</string>
+    <string name="label_max">Tối đa</string>
+    <string name="label_average">Trung bình</string>
+    <string name="label_available">Khả dụng</string>
+    <string name="label_free">Trống</string>
+    <string name="label_cached">Bộ đệm</string>
+    <string name="label_voltage">Điện áp</string>
+    <string name="label_electric_current">Dòng điện</string>
+    <string name="label_temperature">Nhiệt độ</string>
+    <string name="label_health">Tình trạng</string>
+    <string name="label_charge_speed">Tốc độ sạc</string>
+
+    <string name="cpu_core_clusters">Cụm lõi</string>
+    <string name="cpu_big_little">Lõi lớn / nhỏ</string>
+    <string name="cpu_big_cores">Lõi lớn</string>
+    <string name="cpu_little_cores">Lõi nhỏ</string>
+    <string name="cpu_core_index">Lõi %1$d</string>
+    <string name="cpu_frequency">Tần số</string>
+    <string name="cpu_frequency_subtitle">Hiện tại / Tối thiểu / Tối đa</string>
+    <string name="cpu_architecture">Kiến trúc</string>
+    <string name="cpu_hardware_info">Thông tin phần cứng</string>
+    <string name="cpu_cores">Số lõi</string>
+    <string name="cpu_abi">ABI</string>
+    <string name="cpu_hardware">Phần cứng</string>
+    <string name="cpu_arm_arch">Kiến trúc ARM</string>
+    <string name="cpu_implementer">Nhà sản xuất</string>
+    <string name="cpu_part">Mã phần</string>
+    <string name="cpu_history">Lịch sử</string>
+    <string name="cpu_history_subtitle">1 phút gần nhất (%1$d mẫu)</string>
+    <string name="cpu_no_samples">Chưa có mẫu dữ liệu lưu</string>
+
+    <string name="memory_usage">Mức sử dụng RAM</string>
+    <string name="memory_low_warning">Cảnh báo thiếu RAM</string>
+    <string name="memory_breakdown">Phân tích bộ nhớ</string>
+    <string name="memory_total_fmt">Tổng: %1$s</string>
+
+    <string name="battery_level">Mức pin</string>
+    <string name="battery_electrical">Điện</string>
+    <string name="battery_voltage_current">Điện áp &amp; dòng điện</string>
+    <string name="battery_status">Trạng thái</string>
+
+    <string name="thermal_overheating">Phát hiện quá nhiệt</string>
+    <string name="thermal_throttling">Đang giảm xung</string>
+    <string name="thermal_temperatures">Nhiệt độ</string>
+    <string name="thermal_zones">Vùng nhiệt</string>
+    <string name="thermal_zones_count">%1$d vùng</string>
+
+    <string name="overlay_permission_granted">Đã cấp quyền SYSTEM_ALERT_WINDOW</string>
+    <string name="overlay_permission_required">Cần quyền này để hiển thị lớp phủ trên ứng dụng khác</string>
+    <string name="overlay_gaming_subtitle">Lớp phủ gọn, làm mới chậm hơn, tiết kiệm bộ nhớ</string>
+    <string name="overlay_metric_fps">FPS</string>
+
+    <string name="benchmark_running">Đang chạy</string>
+    <string name="benchmark_cancel">Hủy</string>
+    <string name="benchmark_cpu_title">Đo hiệu năng CPU</string>
+    <string name="benchmark_cpu_subtitle">Tải số nguyên tố 15 giây — điểm, nhiệt độ, độ ổn định tần số</string>
+    <string name="benchmark_run_cpu">Chạy đo CPU</string>
+    <string name="benchmark_result">Kết quả đo</string>
+    <string name="benchmark_stress_title">Stress test</string>
+    <string name="benchmark_stress_subtitle">Tải đa lõi kéo dài kèm giám sát nhiệt</string>
+    <string name="benchmark_run_stress">Chạy stress test</string>
+    <string name="benchmark_stress_result">Kết quả stress test</string>
+    <string name="benchmark_temperature_fmt">Nhiệt độ: %1$d°C</string>
+    <string name="benchmark_frequency_fmt">Tần số: %1$d MHz</string>
+    <string name="benchmark_score">Điểm</string>
+    <string name="benchmark_peak_temperature">Nhiệt độ đỉnh</string>
+    <string name="benchmark_avg_temperature">Nhiệt độ trung bình</string>
+    <string name="benchmark_frequency_stability">Độ ổn định tần số</string>
+    <string name="benchmark_duration">Thời lượng</string>
+    <string name="benchmark_avg_cpu">Mức CPU trung bình</string>
+    <string name="benchmark_mode_single">Một lõi</string>
+    <string name="benchmark_mode_multi">Đa lõi</string>
+    <string name="benchmark_stress_5m">5 phút</string>
+    <string name="benchmark_stress_10m">10 phút</string>
+    <string name="benchmark_stress_30m">30 phút</string>
+
+    <string name="analytics_health_engine">Đánh giá sức khỏe thiết bị</string>
+    <string name="analytics_performance_scoring">Chấm điểm hiệu năng</string>
+    <string name="analytics_overall_score">Tổng %1$d</string>
+    <string name="analytics_cpu_stability">Ổn định CPU</string>
+    <string name="analytics_thermal_headroom">Dư nhiệt</string>
+    <string name="analytics_memory_efficiency">Hiệu quả RAM</string>
+    <string name="analytics_battery_endurance">Thời lượng pin</string>
+    <string name="analytics_trends_peaks">Xu hướng &amp; đỉnh</string>
+    <string name="analytics_samples">%1$d mẫu</string>
+    <string name="analytics_peak_cpu">Đỉnh CPU</string>
+    <string name="analytics_peak_memory">Đỉnh RAM</string>
+    <string name="analytics_peak_temperature">Đỉnh nhiệt độ</string>
+
+    <string name="storage_cat_apps">Ứng dụng</string>
+    <string name="storage_cat_images">Ảnh</string>
+    <string name="storage_cat_videos">Video</string>
+    <string name="storage_cat_audio">Âm thanh</string>
+    <string name="storage_cat_documents">Tài liệu</string>
+    <string name="storage_cat_downloads">Tải xuống</string>
+    <string name="storage_cat_other">Khác</string>
+
+    <string name="export_local_hint">Báo cáo được lưu cục bộ và có thể chia sẻ từ màn hình này.</string>
+    <string name="export_size_fmt">Kích thước: %1$d byte</string>
+    <string name="export_share_chooser">Chia sẻ báo cáo</string>
+
+    <string name="alert_comparator_gt">&gt;</string>
+    <string name="alert_comparator_lt">&lt;</string>
+
+    <string name="error_cpu_monitoring">Giám sát CPU thất bại</string>
+    <string name="error_memory_monitoring">Giám sát RAM thất bại</string>
+    <string name="error_battery_monitoring">Giám sát pin thất bại</string>
+    <string name="error_thermal_monitoring">Giám sát nhiệt thất bại</string>
+    <string name="error_storage_monitoring">Giám sát bộ nhớ thất bại</string>
+
+    <string name="process_cpu_fmt">CPU %1$s%%</string>
+    <string name="process_ram_fmt">RAM %1$d KB</string>
+    <string name="settings_budget_cpu">Ngưỡng: ≤ %1$d%%</string>
+    <string name="settings_budget_memory">Ngưỡng: ≤ 150 MB</string>
+
+    <string name="battery_health_good">Tốt</string>
+    <string name="battery_health_overheat">Quá nhiệt</string>
+    <string name="battery_health_dead">Hỏng</string>
+    <string name="battery_health_over_voltage">Quá áp</string>
+    <string name="battery_health_failure">Lỗi</string>
+    <string name="battery_health_cold">Lạnh</string>
+    <string name="battery_health_unknown">Không xác định</string>
+
+    <string name="thermal_zone_cpu">CPU</string>
+    <string name="thermal_zone_gpu">GPU</string>
+    <string name="thermal_zone_battery">Pin</string>
+    <string name="thermal_zone_skin">Vỏ máy</string>
+    <string name="thermal_zone_charger">Sạc</string>
+    <string name="thermal_zone_modem">Modem</string>
+    <string name="thermal_zone_wlan">Wi‑Fi</string>
+    <string name="thermal_zone_camera">Camera</string>
+    <string name="thermal_zone_pa">Khuếch đại công suất</string>
+    <string name="thermal_zone_soc">SoC</string>
+    <string name="thermal_zone_display">Màn hình</string>
+    <string name="thermal_zone_ntc">Cảm biến NTC</string>
+
+    <string name="health_summary_avg_usage">Mức sử dụng trung bình %1$d%%</string>
+    <string name="health_summary_peak_temp">Nhiệt độ đỉnh %1$d°C</string>
+    <string name="health_summary_battery">%1$d%% • %2$s</string>
+    <string name="health_summary_no_cpu">Chưa có mẫu CPU</string>
+    <string name="health_summary_no_memory">Chưa có mẫu RAM</string>
+    <string name="health_summary_no_thermal">Chưa có mẫu nhiệt</string>
+    <string name="health_summary_no_battery">Chưa có mẫu pin</string>
+
+    <string name="perf_summary_excellent">Hiệu năng ổn định, còn nhiều dư nhiệt.</string>
+    <string name="perf_summary_good">Hiệu năng tốt, biến động nhẹ.</string>
+    <string name="perf_summary_fair">Hiệu năng chấp nhận được nhưng có dấu hiệu tải.</string>
+    <string name="perf_summary_poor">Hiệu năng bị hạn chế do tải hoặc nhiệt kéo dài.</string>
+
+    <string name="trend_metric_cpu_usage">Mức CPU</string>
+    <string name="trend_metric_memory_usage">Mức RAM</string>
+    <string name="trend_metric_temperature">Nhiệt độ</string>
+
+    <string name="insight_title_rising">%1$s đang tăng</string>
+    <string name="insight_high_cpu_load">Phát hiện tải CPU cao</string>
+    <string name="insight_memory_pressure">Phát hiện áp lực RAM</string>
+    <string name="insight_elevated_temperature">Nhiệt độ cao</string>
+    <string name="insight_thermal_throttling">Phát hiện giảm xung nhiệt</string>
+    <string name="insight_system_stable">Hệ thống ổn định</string>
+    <string name="insight_desc_rising">%1$s tăng %2$d%% trong giờ qua.</string>
+    <string name="insight_desc_peak_cpu">Đỉnh CPU đạt %1$d%% trong khoảng đã chọn.</string>
+    <string name="insight_desc_peak_memory">Đỉnh RAM đạt %1$d%%.</string>
+    <string name="insight_desc_peak_temperature">Đỉnh nhiệt độ đạt %1$d°C.</string>
+    <string name="insight_desc_throttling">Ghi nhận %1$d lần giảm xung nhiệt.</string>
+    <string name="insight_desc_stable">Không phát hiện bất thường đáng kể trong khoảng phân tích.</string>
+
+    <string name="alert_rule_cpu_high">CPU trên 90%</string>
+    <string name="alert_rule_thermal_high">Nhiệt độ trên 45°C</string>
+    <string name="alert_rule_memory_high">RAM trên 85%</string>
+    <string name="alert_rule_battery_low">Pin dưới 20%</string>
+    <string name="alert_history_message">%1$s (hiện tại=%2$s)</string>
+
+    <string name="retention_24h">24 giờ</string>
+    <string name="retention_7d">7 ngày</string>
+    <string name="retention_30d">30 ngày</string>
+    <string name="retention_unlimited">Không giới hạn</string>
+
+    <string name="settings_background_title">Giám sát nền</string>
+    <string name="settings_background_subtitle">Tiếp tục thu thập khi đóng app</string>
+    <string name="settings_battery_exempt">Pin không hạn chế — giám sát được bảo vệ</string>
+    <string name="settings_battery_restricted">Tiết kiệm pin có thể dừng giám sát</string>
+    <string name="settings_battery_allow">Cho phép không hạn chế</string>
+    <string name="settings_battery_granted">Đã cho phép</string>
+    <string name="settings_refresh_interval">Làm mới mỗi %1$d giây</string>
+    <string name="settings_retention_expand">Tùy chỉnh từng chỉ số</string>
+    <string name="settings_retention_collapse">Thu gọn</string>
+    <string name="settings_retention_summary">CPU %1$s · RAM %2$s · Nhiệt %3$s · Pin %4$s</string>
+    <string name="settings_device_info">Thông số thiết bị</string>
+    <string name="settings_device_info_subtitle">Xác minh phần cứng và phát hiện bất thường</string>
+
+    <string name="settings_update_title">Cập nhật ứng dụng</string>
+    <string name="settings_update_current_version">Phiên bản hiện tại: %1$s</string>
+    <string name="settings_update_checking">Đang kiểm tra bản phát hành trên GitHub…</string>
+    <string name="settings_update_up_to_date">Bạn đang dùng phiên bản mới nhất</string>
+    <string name="settings_update_available">Đã có phiên bản %1$s</string>
+    <string name="settings_update_download">Tải bản cập nhật</string>
+    <string name="settings_update_downloading">Đang tải bản cập nhật…</string>
+    <string name="settings_update_ready">Tải xong. Nhấn cài đặt để cập nhật.</string>
+    <string name="settings_update_install">Cài đặt bản cập nhật</string>
+    <string name="settings_update_check_again">Kiểm tra lại</string>
+    <string name="settings_update_error">Không thể kiểm tra cập nhật</string>
+
+    <string name="device_info_title">Thông tin thiết bị</string>
+    <string name="device_info_refresh">Làm mới</string>
+    <string name="device_info_authenticity_checks">Kiểm tra xác thực</string>
+    <string name="device_info_authenticity_checks_subtitle">Đối chiếu tín hiệu phần cứng và phần mềm</string>
+    <string name="device_info_identity">Danh tính thiết bị</string>
+    <string name="device_info_identity_subtitle">Thuộc tính Build do hệ thống báo cáo</string>
+    <string name="device_info_cpu">Phần cứng CPU</string>
+    <string name="device_info_cpu_subtitle">Kiến trúc từ cpuinfo và tần số sysfs</string>
+    <string name="device_info_cpu_cores">Tần số từng nhân</string>
+    <string name="device_info_cpu_cores_subtitle">Tốc độ xung thời gian thực từ sysfs (MHz)</string>
+    <string name="device_info_memory_storage">Bộ nhớ &amp; lưu trữ</string>
+    <string name="device_info_memory_storage_subtitle">Dung lượng tổng do hệ thống báo cáo</string>
+    <string name="device_info_software">Phần mềm</string>
+    <string name="device_info_software_subtitle">Thông tin bản build Android và kernel</string>
+    <string name="device_info_screen">Màn hình</string>
+    <string name="device_info_screen_subtitle">Độ phân giải, mật độ và tần số quét</string>
+    <string name="device_info_gpu">GPU</string>
+    <string name="device_info_gpu_subtitle">Thông tin đồ họa</string>
+    <string name="device_info_auth_trusted">Nhất quán</string>
+    <string name="device_info_auth_warning">Nên kiểm tra lại</string>
+    <string name="device_info_auth_suspicious">Thiết bị đáng ngờ</string>
+    <string name="device_info_auth_score">Điểm %1$d</string>
+    <string name="device_info_auth_disclaimer">Chỉ là kiểm tra heuristic. Điểm cao không đảm bảo máy thật 100%.</string>
+    <string name="device_info_manufacturer">Hãng sản xuất</string>
+    <string name="device_info_brand">Thương hiệu</string>
+    <string name="device_info_model">Model</string>
+    <string name="device_info_device">Device</string>
+    <string name="device_info_product">Product</string>
+    <string name="device_info_board">Board</string>
+    <string name="device_info_hardware">Hardware</string>
+    <string name="device_info_bootloader">Bootloader</string>
+    <string name="device_info_fingerprint">Fingerprint</string>
+    <string name="device_info_supported_abis">ABI hỗ trợ</string>
+    <string name="device_info_variant">Variant</string>
+    <string name="device_info_avg_current_freq">Tần số hiện tại (TB)</string>
+    <string name="device_info_avg_max_freq">Tần số tối đa (TB)</string>
+    <string name="device_info_cpu_usage_monitoring">Giám sát % CPU</string>
+    <string name="device_info_available">Khả dụng</string>
+    <string name="device_info_blocked_by_rom">Bị ROM chặn</string>
+    <string name="device_info_total_ram">Tổng RAM</string>
+    <string name="device_info_total_storage">Tổng bộ nhớ trong</string>
+    <string name="device_info_android_version">Phiên bản Android</string>
+    <string name="device_info_api_level">API level</string>
+    <string name="device_info_security_patch">Bản vá bảo mật</string>
+    <string name="device_info_kernel">Kernel</string>
+    <string name="device_info_build_id">Build ID</string>
+    <string name="device_info_build_tags">Build tags</string>
+    <string name="device_info_build_type">Build type</string>
+    <string name="device_info_display_build">Display build</string>
+    <string name="device_info_resolution">Độ phân giải</string>
+    <string name="device_info_resolution_value">%1$d x %2$d (%3$s)</string>
+    <string name="screen_class_sd">SD</string>
+    <string name="screen_class_hd">HD</string>
+    <string name="screen_class_full_hd">Full HD</string>
+    <string name="screen_class_qhd">Quad HD</string>
+    <string name="screen_class_uhd_4k">4K UHD</string>
+    <string name="screen_class_uhd_8k">8K UHD</string>
+    <string name="screen_class_unknown">Không xác định</string>
+    <string name="device_info_density">Mật độ</string>
+    <string name="device_info_refresh_rate">Tần số quét</string>
+    <string name="device_info_gpu_renderer">GPU renderer</string>
+    <string name="device_info_gpu_vendor">GPU vendor</string>
+    <string name="device_info_opengl_es">OpenGL ES</string>
+    <string name="device_info_core_label">Nhân %1$d</string>
+    <string name="device_info_current_freq">Hiện tại</string>
+    <string name="device_info_min_freq">Tối thiểu</string>
+    <string name="device_info_max_freq">Tối đa</string>
+    <string name="device_info_governor">Governor</string>
+
+    <string name="device_info_cameras">Camera</string>
+    <string name="device_info_cameras_subtitle">Hướng ống kính, độ phân giải và tính năng phần cứng</string>
+    <string name="device_info_no_cameras">Hệ thống không báo cáo camera</string>
+    <string name="device_info_camera_facing_back">Sau</string>
+    <string name="device_info_camera_facing_front">Trước</string>
+    <string name="device_info_camera_facing_external">Ngoài</string>
+    <string name="device_info_camera_facing_unknown">Không xác định</string>
+    <string name="device_info_camera_summary">%1$s · %2$s</string>
+    <string name="device_info_camera_mp">%1$s MP</string>
+    <string name="device_info_camera_flash">Đèn flash</string>
+    <string name="device_info_camera_ois">OIS</string>
+    <string name="device_info_camera_no_flash">Không flash</string>
+
+    <string name="device_info_audio">Âm thanh</string>
+    <string name="device_info_audio_subtitle">Micro và loa do hệ thống phát hiện</string>
+    <string name="device_info_microphone">Micro</string>
+    <string name="device_info_speakers">Loa</string>
+    <string name="device_info_audio_input_devices">Thiết bị vào</string>
+    <string name="device_info_audio_output_devices">Thiết bị ra</string>
+    <string name="device_info_audio_device_count">%1$d thiết bị</string>
+
+    <string name="device_info_sensors">Cảm biến</string>
+    <string name="device_info_sensors_subtitle">%1$d cảm biến phần cứng</string>
+    <string name="device_info_sensor_entry">%1$s · %2$s</string>
+
+    <string name="device_info_connectivity">Kết nối &amp; phần cứng</string>
+    <string name="device_info_connectivity_subtitle">Không dây, sinh trắc học và cảm biến chuyển động</string>
+    <string name="device_info_bluetooth">Bluetooth</string>
+    <string name="device_info_wifi">Wi-Fi</string>
+    <string name="device_info_nfc">NFC</string>
+    <string name="device_info_gps">GPS</string>
+    <string name="device_info_telephony">Telephony</string>
+    <string name="device_info_fingerprint_sensor">Cảm biến vân tay</string>
+    <string name="device_info_face_unlock">Mở khóa khuôn mặt</string>
+    <string name="device_info_usb_host">USB host</string>
+    <string name="device_info_vibrator">Rung</string>
+    <string name="device_info_accelerometer">Gia tốc kế</string>
+    <string name="device_info_gyroscope">Con quay</string>
+    <string name="device_info_compass">La bàn</string>
+    <string name="device_info_proximity">Khoảng cách</string>
+    <string name="device_info_light_sensor">Ánh sáng</string>
+    <string name="device_info_barometer">Áp suất</string>
+    <string name="device_info_step_counter">Đếm bước</string>
+    <string name="device_info_yes">Có</string>
+    <string name="device_info_no">Không</string>
+</resources>

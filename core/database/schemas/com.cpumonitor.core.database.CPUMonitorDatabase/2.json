@@ -1,0 +1,356 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "f6b0be505e63a639c67ebc47e9cbcad1",
+    "entities": [
+      {
+        "tableName": "cpu_metrics",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `timestamp_millis` INTEGER NOT NULL, `total_usage_percent` REAL NOT NULL, `per_core_usage_percent` TEXT NOT NULL, `big_core_usage_percent` REAL NOT NULL, `little_core_usage_percent` REAL NOT NULL, `current_frequency_mhz` REAL NOT NULL, `min_frequency_mhz` REAL NOT NULL, `max_frequency_mhz` REAL NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestampMillis",
+            "columnName": "timestamp_millis",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalUsagePercent",
+            "columnName": "total_usage_percent",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "perCoreUsagePercent",
+            "columnName": "per_core_usage_percent",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bigCoreUsagePercent",
+            "columnName": "big_core_usage_percent",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "littleCoreUsagePercent",
+            "columnName": "little_core_usage_percent",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currentFrequencyMhz",
+            "columnName": "current_frequency_mhz",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minFrequencyMhz",
+            "columnName": "min_frequency_mhz",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "maxFrequencyMhz",
+            "columnName": "max_frequency_mhz",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_cpu_metrics_timestamp_millis",
+            "unique": false,
+            "columnNames": [
+              "timestamp_millis"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_cpu_metrics_timestamp_millis` ON `${TABLE_NAME}` (`timestamp_millis`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "memory_metrics",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `timestamp_millis` INTEGER NOT NULL, `used_bytes` INTEGER NOT NULL, `available_bytes` INTEGER NOT NULL, `free_bytes` INTEGER NOT NULL, `cached_bytes` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestampMillis",
+            "columnName": "timestamp_millis",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "usedBytes",
+            "columnName": "used_bytes",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "availableBytes",
+            "columnName": "available_bytes",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "freeBytes",
+            "columnName": "free_bytes",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cachedBytes",
+            "columnName": "cached_bytes",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_memory_metrics_timestamp_millis",
+            "unique": false,
+            "columnNames": [
+              "timestamp_millis"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_memory_metrics_timestamp_millis` ON `${TABLE_NAME}` (`timestamp_millis`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "thermal_metrics",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `timestamp_millis` INTEGER NOT NULL, `cpu_temperature_celsius` REAL NOT NULL, `battery_temperature_celsius` REAL NOT NULL, `thermal_zone_temperatures` TEXT NOT NULL, `is_throttling` INTEGER NOT NULL, `is_overheating` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestampMillis",
+            "columnName": "timestamp_millis",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cpuTemperatureCelsius",
+            "columnName": "cpu_temperature_celsius",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "batteryTemperatureCelsius",
+            "columnName": "battery_temperature_celsius",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "thermalZoneTemperatures",
+            "columnName": "thermal_zone_temperatures",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isThrottling",
+            "columnName": "is_throttling",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isOverheating",
+            "columnName": "is_overheating",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_thermal_metrics_timestamp_millis",
+            "unique": false,
+            "columnNames": [
+              "timestamp_millis"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_thermal_metrics_timestamp_millis` ON `${TABLE_NAME}` (`timestamp_millis`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "battery_metrics",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `timestamp_millis` INTEGER NOT NULL, `percentage` INTEGER NOT NULL, `voltage_mv` INTEGER NOT NULL, `current_ma` INTEGER NOT NULL, `capacity_mah` INTEGER NOT NULL, `temperature_celsius` REAL NOT NULL, `health` TEXT NOT NULL, `is_charging` INTEGER NOT NULL, `charge_speed_mw` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestampMillis",
+            "columnName": "timestamp_millis",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "percentage",
+            "columnName": "percentage",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "voltageMv",
+            "columnName": "voltage_mv",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currentMa",
+            "columnName": "current_ma",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "capacityMah",
+            "columnName": "capacity_mah",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "temperatureCelsius",
+            "columnName": "temperature_celsius",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "health",
+            "columnName": "health",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isCharging",
+            "columnName": "is_charging",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chargeSpeedMw",
+            "columnName": "charge_speed_mw",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_battery_metrics_timestamp_millis",
+            "unique": false,
+            "columnNames": [
+              "timestamp_millis"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_battery_metrics_timestamp_millis` ON `${TABLE_NAME}` (`timestamp_millis`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "alert_history",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `rule_id` TEXT NOT NULL, `message` TEXT NOT NULL, `metric_value` REAL NOT NULL, `timestamp_millis` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ruleId",
+            "columnName": "rule_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "message",
+            "columnName": "message",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "metricValue",
+            "columnName": "metric_value",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestampMillis",
+            "columnName": "timestamp_millis",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_alert_history_timestamp_millis",
+            "unique": false,
+            "columnNames": [
+              "timestamp_millis"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_alert_history_timestamp_millis` ON `${TABLE_NAME}` (`timestamp_millis`)"
+          }
+        ],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f6b0be505e63a639c67ebc47e9cbcad1')"
+    ]
+  }
+}

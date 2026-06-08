@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="overlay_notification_channel_name">Overlay monitor</string>
+    <string name="overlay_notification_channel_description">Shows when the floating performance overlay is active</string>
+    <string name="overlay_notification_title">Overlay monitor active</string>
+    <string name="overlay_notification_text">Displaying CPU, RAM, temperature, and FPS</string>
+</resources>

@@ -1,0 +1,53 @@
+---
+description: Bắt buộc cập nhật tiến độ vào file plan khi làm việc theo plan
+alwaysApply: true
+---
+
+# Theo dõi tiến độ trong Plan
+
+Khi nhiệm vụ được ra lệnh **theo plan**, **theo file plan**, hoặc tham chiếu tới một file plan cụ thể — BẮT BUỘC đánh dấu và ghi chú tiến trình vào file plan đó.
+
+## Khi nào áp dụng
+
+- Người dùng nói: "theo plan", "làm theo plan", "execute plan", "follow the plan", v.v.
+- Người dùng chỉ định hoặc đính kèm file plan (ví dụ: `plan.md`, `PLAN.md`, `*.plan.md`, file trong `.cursor/plans/`).
+- Agent đang thực thi các bước từ một plan đã có trong workspace.
+
+## Quy trình bắt buộc
+
+1. **Đọc plan trước khi làm** — xác định bước hiện tại và phạm vi công việc.
+2. **Đánh dấu khi bắt đầu** — đổi trạng thái bước đang làm sang `in_progress` (hoặc tương đương).
+3. **Ghi chú trong khi làm** — thêm ghi chú ngắn về việc đã làm, file đã sửa, hoặc vấn đề gặp phải.
+4. **Đánh dấu khi hoàn thành** — đổi trạng thái sang `completed` (hoặc tương đương) và ghi kết quả tóm tắt.
+5. **Cập nhật plan trước khi kết thúc turn** — không bỏ qua bước này dù nhiệm vụ nhỏ.
+
+## Định dạng cập nhật trong plan
+
+Ưu tiên dùng checkbox Markdown nếu plan đã có:
+
+```markdown
+- [ ] Bước 1 — mô tả
+- [x] Bước 2 — mô tả (hoàn thành: 2026-06-08, đã thêm X vào Y)
+- [ ] Bước 3 — mô tả (đang làm: ghi chú ngắn)
+```
+
+Nếu plan dùng bảng trạng thái, cập nhật cột `Status` và `Notes`:
+
+| Bước | Status | Notes |
+|------|--------|-------|
+| Setup auth | completed | Đã thêm middleware |
+| API routes | in_progress | Đang làm endpoint /users |
+
+Nếu plan chưa có cấu trúc tiến độ, thêm mục `## Tiến độ` ở cuối file với timestamp và trạng thái từng bước.
+
+## Ghi chú tiến trình phải có
+
+- Trạng thái: `pending` | `in_progress` | `completed` | `blocked`
+- Thời điểm cập nhật (ngày hoặc datetime)
+- Tóm tắt ngắn việc đã làm hoặc lý do bị chặn (`blocked`)
+
+## Không được
+
+- Làm xong công việc mà không cập nhật file plan.
+- Chỉ báo cáo tiến độ trong chat mà không ghi vào plan.
+- Ghi đè hoặc xóa nội dung plan gốc — chỉ cập nhật trạng thái và ghi chú.

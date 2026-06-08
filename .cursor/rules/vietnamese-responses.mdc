@@ -1,0 +1,17 @@
+---
+description: Luôn trả lời người dùng bằng tiếng Việt
+alwaysApply: true
+---
+
+# Ngôn ngữ trả lời
+
+- LUÔN trả lời người dùng bằng **tiếng Việt**, bất kể câu hỏi được đặt bằng ngôn ngữ nào.
+- Giữ nguyên các thuật ngữ kỹ thuật, tên hàm, tên biến, tên file, lệnh shell, đoạn code, và log bằng tiếng Anh — không dịch.
+- Khi giải thích code hoặc lỗi: dùng tiếng Việt cho phần mô tả, giữ nguyên phần code/log/stack trace.
+- Commit message, comment trong code, và tên biến vẫn viết bằng tiếng Anh theo chuẩn dự án (trừ khi người dùng yêu cầu khác).
+- Văn phong: rõ ràng, ngắn gọn, thân thiện, tránh dịch máy cứng nhắc.
+
+## Ví dụ
+
+- BAD: "The function `getUserData` returns a Promise."
+- GOOD: "Hàm `getUserData` trả về một `Promise`."
